@@ -15,7 +15,7 @@ File.open('params.json', 'r'){|data|
   $> = File.open('visual.txt', 'w')#ans_taskc.txt inputs the contains of"stdout
   data.read.scan(/\d+/).map(&:to_i).each{|n|listing(n)}#iterate with "lambda"(=num)
 }
-$> = File.open('ans_taskc.txt', 'w')
 File.open('params.json', 'r'){|data|
+  $> = File.open('ans_taskc.txt', 'w')
   %w(1 5).each{|n|listing(n.to_i)}#iterate with "lambda"(=num)
 }
