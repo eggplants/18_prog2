@@ -1,20 +1,21 @@
 def listing(num)
   puts "Poisson distribution", "lambda: #{num}"#heading
   #iterate with k(=incr)=0~20
-  20.times{|incr|
-    #to avoid devide 0 change cases of k=0 and k>0
-    result = incr == 0 ?
-    1/(2.718281828459045**num.to_f)
-    : (num**incr)/((1..incr).inject(:*)*(2.718281828459045**num.to_f))
-    #round f(k) value round to 7th decimal
-    result = "%.6f" % result.round(6)
+  [*0..20].each{|incr|
+    #to avoid devide 0 change cases of k=0 and k>0 & round f(k) to 7th decimal
+    result = "%.6f" % (incr == 0 ?
+    (1/(Math.exp(1)**num.to_f)).round(6)
+    : ((num**incr)/((1..incr).inject(:*)*(Math.exp(1)**num.to_f))).round(6))
     #put "(num of k):(f(k)):(*(s))"
     puts %Q(#{"%02d"%incr}:#{result}:#{'*'*((result.to_f*100).floor+1)})
   }
 end
-#get values(λ) from a json file
-File.open("params.json", 'r'){|data|
-  $num = data.read.scan(/\d+/).map(&:to_i)
+#get values(elements "lambda") from a json file
+File.open('params.json', 'r'){|data|
+  $> = File.open('visual.txt', 'w')#ans_taskc.txt inputs the contains of"stdout
+  data.read.scan(/\d+/).map(&:to_i).each{|n|listing(n)}#iterate with "lambda"(=num)
 }
-#iterate with λ(=num)
-$>= File.open('visual.txt', 'w'); $num.each{|n|listing(n)}
+$> = File.open('ans_taskc.txt', 'w')
+File.open('params.json', 'r'){|data|
+  %w(1 5).each{|n|listing(n.to_i)}#iterate with "lambda"(=num)
+}
