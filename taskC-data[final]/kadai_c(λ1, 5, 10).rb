@@ -13,6 +13,6 @@ end
 #ans_taskc.txt inputs the contains of"stdout
 $>= File.open('ans_taskc.txt', 'w')
 #get values(elements "lambda") from a json file
-%w(1 5 10).each{|data|
+%w(2 5 10).each{|data|
   listing(data.to_i)#iterate with "lambda"(=num)
 }
