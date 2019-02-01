@@ -50,7 +50,7 @@ user.each do |use|
     mon_v=month[date[1].to_sym]
     fri=data.scan(/flight,(.*)?\n/).flatten.map{|aa|aa.split(", ")}
     File.open(filename,"w"){|aaaa|
-      aaaa.puts "Mr. #{use.scan(/[A-Z]+/).flatten[0].capitalize} #{use.scan(/[A-Z]+/).flatten[1].capitalize} さん\n"
+      aaaa.puts "Mr. #{use.scan(/[A-Z]+/).flatten[0].capitalize} #{use.scan(/[A-Z]+/).flatten[1].capitalize} さん\n\n"
       aaaa
       .puts "20#{date[2]}年#{mon_v}月#{date[0]}日に予約された旅行スケジュールです."
       aaaa.puts "予約番号は「#{idd[0][0]}」です."
