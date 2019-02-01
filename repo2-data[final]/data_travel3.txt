@@ -1,0 +1,18 @@
+# data number-3
+reserve-id, 7LB6MN
+reserve-date, 18JAN15
+pax, TANAKA/KURO/MR
+pax, TANAKA/OYOGU/MR
+pax, NEMUI/TANUKI/CHD
+flight, DL284, U, 22SEP, 1515, 0935, NRT/LAX, HK1 D/S *FQCUGT /E   #2
+flight, DL2623, L, 23SEP, 1030, 1157, LAX/SFO, HK1 D/S *FQCUGT /E
+flight, DL4780, L, 24SEP, 1430, 1559, SFO/LAX, HK1 D/S *FQCUGT /E
+flight, DL635, U, 27SEP, 0110, 0455, LAX/HND, HK1 D/S *FQCUGT /E   #D
+# seat for only one
+seat, DL284, TANAKA/OYOGU/MR, 43B
+seat, DL635, TANAKA/OYOGU/MR, 34K
+# meal. french?
+meal, DL635, NEMUI/TANUKI/CHD, french
+# just water
+meal, all, TANAKA/KURO/MR, water
+

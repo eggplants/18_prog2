@@ -1,0 +1,47 @@
+# flight schedule data
+# print 'NO SEAT' to pax
+reserve-id, 284EEH
+reserve-date, 10MAY14
+pax, YAMADA/PENGUIN/MRS
+pax, YAMADA/PANDA/MR
+flight, AA176, V, 13JUL, 1310, 1055, NRT/DFW, HK1 D/S *FQCUGT /E #2
+flight, AA1592, V, 13JUL, 1225, 1600, DFW/MCO, HK1 D/S *FQCUGT /E
+flight, AA1871, V, 15JUL, 0820, 1005, MCO/DFW, HK1 D/S *FQCUGT /E
+flight, AA061, V, 15JUL, 1305, 1600, DFW/NRT, HK1 D/S *FQCUGT /E #D
+seat, AA176, YAMADA/PENGUIN/MRS, 38G
+seat, AA1592, YAMADA/PENGUIN/MRS, 19B
+seat, AA1871, YAMADA/PENGUIN/MRS, 18B
+seat, AA061, YAMADA/PENGUIN/MRS, 37A
+meal, all, YAMADA/PENGUIN/MRS, vegetarian
+meal, AA061, YAMADA/PANDA/MR, italian
+# data number-2
+reserve-id, Y8Z4FC
+reserve-date, 15NOV07
+pax, KAGAWA/JULIANA/MRS
+pax, KAGAWA/YUUTO/INF
+# many flights
+flight, JL3084, H, 18APR, 1405, 1510, NGO/NRT, HK1 18APR E JL/Y4DVH2    
+flight, AA168, V, 18APR, 1800, 1800, NRT/JFK, HK1 18APR E AA/KYNCAB    
+flight, AA951, V, 18APR, 2130, 0755, JFK/GRU, HK1 19APR E AA/KYNCAB    
+flight, AA950, V, 10MAY, 2130, 0605, GRU/JFK, HK1 2130 0605 11MAY E AA/KYNCAB    
+flight, AA167, V, 11MAY, 1150, 1430, JFK/NRT, HK1 12MAY E AA/KYNCAB    
+flight, JL053, H, 12MAY, 1820, 1940, NRT/NGO, TK1 12MAY E JL/Y4DVH2    
+# no further data
+# data number-3
+reserve-id, 7LB6MN
+reserve-date, 18JAN15
+pax, TANAKA/KURO/MR
+pax, TANAKA/OYOGU/MR
+pax, NEMUI/TANUKI/CHD
+flight, DL284, U, 22SEP, 1515, 0935, NRT/LAX, HK1 D/S *FQCUGT /E   #2
+flight, DL2623, L, 23SEP, 1030, 1157, LAX/SFO, HK1 D/S *FQCUGT /E
+flight, DL4780, L, 24SEP, 1430, 1559, SFO/LAX, HK1 D/S *FQCUGT /E
+flight, DL635, U, 27SEP, 0110, 0455, LAX/HND, HK1 D/S *FQCUGT /E   #D
+# seat for only one
+seat, DL284, TANAKA/OYOGU/MR, 43B
+seat, DL635, TANAKA/OYOGU/MR, 34K
+# meal. french?
+meal, DL635, NEMUI/TANUKI/CHD, french
+# just water
+meal, all, TANAKA/KURO/MR, water
+
